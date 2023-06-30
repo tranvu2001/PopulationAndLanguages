@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 30</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <button class="scroll-to-top off">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <header>
+            <h1>World Countries Data</h1>
+            <span>Currently, we have 250 countries</span>
+            <p class="quantity"></p>
+        </header>
+        <div class="action">
+            <input type="text" class="input-action" placeholder="Search countries by name, city and languages">
+            <div class="btn-action">
+                <button class="btn-name">
+                    <p>NAME</p>
+                    <i class="fa-solid fa-arrow-down off"></i>
+                </button>
+                <button class="btn-capital">
+                    <p>CAPITAL</p>
+                    <i class="fa-solid fa-arrow-down off"></i>
+                </button>
+                <button class="btn-population">
+                    <p>POPULATION</p>
+                    <i class="fa-solid fa-arrow-down off"></i>
+                </button>
+                <a class="btn-chart" href="#wrapper-chart"><i class="fa-solid fa-chart-column"></i></a>
+            </div>
+        </div>
+        <div class="search-result">
+            <div class="result-list ">
+                
+            </div>
+            <div class="result-list off">
+                
+            </div>
+            <div class="result-list off">
+                
+            </div>
+        </div>
+
+        <div class="wrapper-chart off" id="wrapper-chart">
+            <div class="chart-top">
+                <div class="actions">
+                    <button class="population">
+                        POPULATION
+                    </button>
+                    <button class="languages">
+                        LANGUAGES
+                    </button>
+                </div>
+                <p class="title"></p>
+            </div>
+            <div class="chart-bottom">
+                <div class="wrapper-population off">
+                    <div class="item-chart">
+                        <p class="name">World</p>
+                        <div class="chart">
+                            <div style="width: 100%;"></div>	
+                        </div>
+                        <p class="statistic">8016940460</p>
+                    </div>
+                </div>
+                <div class="wrapper-languages off">
+                    <div class="item-chart">
+                        <p class="name">World</p>
+                        <div class="chart">
+                            <div style="width: 100%;"></div>	
+                        </div>
+                        <p class="statistic">8016940460</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
