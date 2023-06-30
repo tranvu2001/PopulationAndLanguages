@@ -234,6 +234,11 @@ button i.off {
     flex: 1;
     text-align: left;
     max-width: 100px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
 }
 
 .chart {
