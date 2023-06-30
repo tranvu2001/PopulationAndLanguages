@@ -3084,6 +3084,10 @@ const wrapperLanguages = document.querySelector('.wrapper-languages')
 const btnChart = document.querySelector('.btn-chart')
 const scrollToTop = document.querySelector('.scroll-to-top')
 
+const numberWithCommas = (num) => {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
+
 window.addEventListener('scroll', (e) => {
     if (window.scrollY >= 300) {
         scrollToTop.classList.remove('off')
@@ -3123,7 +3127,7 @@ const render = (callback, data) => {
                 <div class="chart">
                     <div style="width: ${item.population / 8016940460 * 100}%"></div>	
                 </div>
-                <p class="statistic">${item.population}</p>
+                <p class="statistic">${numberWithCommas(item.population)}</p>
             </div>
         `
     }).join('')
@@ -3140,7 +3144,7 @@ const render = (callback, data) => {
     div.appendChild(div2)
     div2.style.width = '100%'
     p2.classList.add('statistic')
-    p2.textContent = 8016940460
+    p2.textContent = numberWithCommas(8016940460)
     newNode.appendChild(p)
     newNode.appendChild(div)
     newNode.appendChild(p2)

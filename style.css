@@ -115,6 +115,7 @@ button i.off {
 
 .result-list {
     width: 1190px;
+    max-width: 100%;
     padding: 10px 0;
     min-height: 220px;
     margin: 0 auto;
@@ -285,6 +286,12 @@ button i.off {
 }
 
 .scroll-to-top i {
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .result-list {
+        grid-template-columns: auto auto auto auto auto;
+    }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
